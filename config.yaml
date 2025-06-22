@@ -63,6 +63,6 @@ menu:
     - name: Tags
       url: /tags/
       weight: 3
-    - name: Photography
-      url: /photography/
-      weight: 4
+    # - name: Photography
+    #   url: /photography/
+    #   weight: 4
