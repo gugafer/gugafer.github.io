@@ -7,8 +7,8 @@ pagination:
   pagerSize: 10  # NOVO FORMATO correto a partir do Hugo 0.128+
 
 params:
-  profileMode: false
-    # enabled: false
+  profileMode: 
+    enabled: false
   env: production
   title: "Gustavo Ferreira"
   description: "Cloud & DevOps Engineer | AWS | Azure | Automation | Blog & Personal Page"
