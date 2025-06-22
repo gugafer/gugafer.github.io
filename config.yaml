@@ -1,23 +1,52 @@
-
 baseURL: "https://gugafer.github.io/"
 languageCode: "en-us"
 title: "Gustavo Ferreira"
 theme: "hugo-PaperMod"
-pagination.pagerSize: 10
-enableInlineShortcodes: true
+#paginate: 10  # DEPRECATED — deixado apenas como fallback
+pagination:
+  pagerSize: 10  # NOVO FORMATO
 
 params:
-  homeInfoParams:
-    Title: "Gustavo Ferreira"
-    Content: "Cloud & DevOps Engineer sharing insights."
+  author: "Gustavo Ferreira"
+  description: "Cloud & DevOps Engineer"
+  defaultTheme: auto
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: false
+  showtoc: true
+  tocopen: true
 
 menu:
   main:
-    - identifier: blog
-      name: Blog
+    - identifier: home
+      name: Home
+      url: /
+      weight: 1
+
+    - identifier: posts
+      name: Posts
       url: /posts/
-      weight: 10
+      weight: 2
+
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 3
+
     - identifier: about
       name: About
       url: /about/
-      weight: 20
+      weight: 4
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON

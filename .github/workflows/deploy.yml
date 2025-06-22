@@ -1,32 +1,35 @@
-
-name: 🚀 Deploy Hugo site to GitHub Pages
+name: 🚀 Deploy no GitHub Pages com Hugo + PaperMod
 
 on:
   push:
     branches:
-      - main
+      - main  # ou "master", dependendo do seu branch principal
+
+permissions:
+  contents: write
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: 📥 Checkout code
-        uses: actions/checkout@v4
-        with:
-          submodules: true
 
-      - name: ⚙️ Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.125.7'
-          extended: true
+    - name: ⏬ Checkout do Código
+      uses: actions/checkout@v4
+      with:
+        submodules: true  # necessário se você usa o tema como submódulo
 
-      - name: 🔨 Build site
-        run: hugo --minify
+    - name: ⚙️ Instalar Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+        extended: true
 
-      - name: 🚀 Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+    - name: ⚙️ Gerar o Site Estático
+      run: hugo --minify
+
+    - name: 🚀 Deploy para GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
+        publish_branch: gh-pages
