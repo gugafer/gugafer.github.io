@@ -10,6 +10,7 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: 🚀 Checkout do Código
         uses: actions/checkout@v4
@@ -17,16 +18,16 @@ jobs:
           submodules: true
           fetch-depth: 0
 
-      - name: 🌐 Setup Hugo (latest)
+      - name: 🌐 Instalar Hugo (latest)
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
 
-      - name: ⚙️ Gerar o Site Estático
+      - name: ⚙️ Gerar o site estático com Hugo
         run: hugo --minify
 
-      - name: 🌟 Deploy no GitHub Pages
+      - name: 🌟 Fazer deploy no GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
