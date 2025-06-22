@@ -1,51 +1,68 @@
 baseURL: "https://gugafer.github.io/"
 languageCode: "en-us"
-title: "Gustavo Ferreira"
+title: "Gustavo gugafer"
 theme: "hugo-PaperMod"
 
 pagination:
   pagerSize: 10  # NOVO FORMATO correto a partir do Hugo 0.128+
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+    - Sitemap
+
 params:
   profileMode: 
     enabled: false
   env: production
-  title: "Gustavo Ferreira"
+  analytics:
+    google:
+      SiteVerificationTag: "G-Y08HKQ19T0"
+  title: "Gustavo gugafer"
   description: "Cloud & DevOps Engineer | AWS | Azure | Automation | Blog & Personal Page"
-  author: "Gustavo Ferreira"
+  keywords: [Cloud, DevOps, Hugo, PaperMod, Blog, Tecnologia]
+  author: "Gustavo gugafer"
   DateFormat: "02 Jan 2006"
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
-  comments: false
   defaultTheme: auto
+  ShowToc: true
+  disableThemeToggle: false
   homeInfoParams:
-    Title: "Olá, eu sou o Gustavo 👋"
+    Title: "Hello there, My name is Gustavo 👋"
     Content: >
       Sou um engenheiro de Cloud e DevOps com experiência em projetos multi-cloud, automação, infraestrutura como código (IaC) e segurança cibernética.  
-      Este é meu blog pessoal, onde compartilho ideias, soluções e aprendizados na área de tecnologia.
+      Engenheiro de Cloud e DevOps. Aqui compartilho ideias, soluções e aprendizados.
+
+  assets:
+    favicon: "images/favicon.ico"
 
   socialIcons:
     - name: github
       url: "https://github.com/gugafer"
     - name: linkedin
       url: "https://www.linkedin.com/in/gugafer/"
-    - name: email
-      url: "mailto:gugafer@gmail.com"
+
+
+  # comments: false  # Altere para true e configure abaixo se quiser usar Disqus
+  #   disqusShortname: "seudisqusshortname"  # Se usar Disqus, substitua aqui
 
 menu:
   main:
-    - identifier: blog
-      name: Blog
+    - name: Blog
       url: /posts/
-      weight: 10
-    - identifier: about
-      name: Sobre
-      url: /about/
-      weight: 20
-    - identifier: tags
-      name: Tags
+      weight: 1
+    - name: Sobre
+      url: /sobre/
+      weight: 2
+    - name: Tags
       url: /tags/
-      weight: 30
+      weight: 3
+    - name: Photography
+      url: /photography/
+      weight: 4
