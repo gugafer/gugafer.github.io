@@ -2,51 +2,48 @@ baseURL: "https://gugafer.github.io/"
 languageCode: "en-us"
 title: "Gustavo Ferreira"
 theme: "hugo-PaperMod"
-#paginate: 10  # DEPRECATED — deixado apenas como fallback
+
 pagination:
-  pagerSize: 10  # NOVO FORMATO
+  pagerSize: 10  # NOVO FORMATO correto a partir do Hugo 0.128+
 
 params:
+  env: production
+  title: "Gustavo Ferreira"
+  description: "Cloud & DevOps Engineer | AWS | Azure | Automation | Blog & Personal Page"
   author: "Gustavo Ferreira"
-  description: "Cloud & DevOps Engineer"
-  defaultTheme: auto
-  ShowBreadCrumbs: true
+  DateFormat: "02 Jan 2006"
   ShowReadingTime: true
   ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
-  disableSpecial1stPost: false
-  showtoc: true
-  tocopen: true
+  comments: false
+  defaultTheme: auto
+  homeInfoParams:
+    Title: "Olá, eu sou o Gustavo 👋"
+    Content: >
+      Sou um engenheiro de Cloud e DevOps com experiência em projetos multi-cloud, automação, infraestrutura como código (IaC) e segurança cibernética.  
+      Este é meu blog pessoal, onde compartilho ideias, soluções e aprendizados na área de tecnologia.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/gugafer"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/gugafer/"
+    - name: email
+      url: "mailto:gugafer@gmail.com"
 
 menu:
   main:
-    - identifier: home
-      name: Home
-      url: /
-      weight: 1
-
-    - identifier: posts
-      name: Posts
+    - identifier: blog
+      name: Blog
       url: /posts/
-      weight: 2
-
+      weight: 10
+    - identifier: about
+      name: Sobre
+      url: /about/
+      weight: 20
     - identifier: tags
       name: Tags
       url: /tags/
-      weight: 3
-
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 4
-
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
+      weight: 30
