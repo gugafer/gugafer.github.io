@@ -1,6 +1,6 @@
 ---
 title: "Azure Landing Zone Architecture for Healthcare: HIPAA-Compliant Cloud Foundations"
-date: 2025-12-24T10:00:00
+date: 2025-10-22T10:00:00
 draft: false
 author: "Gustavo de Oliveira Ferreira"
 tags: ["Azure", "Landing Zone", "Healthcare", "HIPAA", "Compliance", "Terraform"]

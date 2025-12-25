@@ -1,6 +1,6 @@
 ---
 title: "Secure Software Supply Chain in the Financial Sector"
-date: 2025-12-21T10:00:00
+date: 2025-07-18T10:00:00
 draft: false
 author: "Gustavo de Oliveira Ferreira"
 tags: ["DevSecOps", "Finance", "SBOM", "Supply Chain Security", "Compliance"]

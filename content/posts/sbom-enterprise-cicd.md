@@ -1,6 +1,6 @@
 --- 
 title: "Implementing Software Bill of Materials (SBOM) in Enterprise CI/CD Pipelines"
-date: 2025-12-25T10:00:00
+date: 2025-11-15T10:00:00
 draft: false
 author: "Gustavo de Oliveira Ferreira"
 tags: ["DevSecOps", "Software Supply Chain", "SBOM", "CI/CD", "Compliance"]

@@ -1,6 +1,6 @@
 ---
 title: "Building Cloud-Native Futures: A Journey into DevSecOps & Architecture"
-date: 2025-12-26T10:00:00
+date: 2025-12-25T10:00:00
 draft: false
 author: "Gustavo de Oliveira Ferreira"
 tags: ["Introduction", "Cloud Native", "DevSecOps", "Career", "Engineering"]

@@ -1,6 +1,6 @@
 ---
 title: "Automating HIPAA Compliance with Infrastructure as Code on AWS"
-date: 2025-12-22T10:00:00
+date: 2025-08-05T10:00:00
 draft: false
 author: "Gustavo de Oliveira Ferreira"
 tags: ["AWS", "HIPAA", "Terraform", "Compliance", "IaC", "Cloud Security"]

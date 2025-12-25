@@ -1,6 +1,6 @@
 ---
 title: "Container Orchestration with Azure Red Hat OpenShift (ARO) for Banking"
-date: 2025-12-20T10:00:00
+date: 2025-06-12T10:00:00
 draft: false
 author: "Gustavo de Oliveira Ferreira"
 tags: ["ARO", "OpenShift", "Kubernetes", "Banking", "GitOps", "ArgoCD"]
