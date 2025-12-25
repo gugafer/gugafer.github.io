@@ -1,10 +1,14 @@
-baseURL: "https://gugafer.github.io/"
-languageCode: "en-us"
-title: "Gustavo gugafer"
-theme: "hugo-PaperMod"
+baseURL: https://gugafer.github.io/
+languageCode: en-us
+title: Gustavo gugafer
+theme: hugo-PaperMod
 
 pagination:
-  pagerSize: 10  # NOVO FORMATO correto a partir do Hugo 0.128+
+  pagerSize: 10 # ✅ formato correto para Hugo v0.128+
+
+taxonomies:
+  category: categories
+  tag: tags
 
 outputs:
   home:
@@ -14,17 +18,18 @@ outputs:
     - Sitemap
 
 params:
-  profileMode: 
-    enabled: false
   env: production
-  analytics:
-    google:
-      SiteVerificationTag: "G-Y08HKQ19T0"
-  title: "Gustavo gugafer"
-  description: "Cloud & DevOps Engineer | AWS | Azure | Automation | Blog & Personal Page"
-  keywords: [Cloud, DevOps, Hugo, PaperMod, Blog, Tecnologia]
-  author: "Gustavo gugafer"
-  DateFormat: "02 Jan 2006"
+  title: Gustavo gugafer
+  description: Cloud & DevOps Engineer | AWS | Azure | Automation | Blog & Personal Page
+  keywords:
+    - Cloud
+    - DevOps
+    - Hugo
+    - PaperMod
+    - Blog
+    - Tecnologia
+  author: Gustavo gugafer
+  DateFormat: January 02, 2006 # ✅ Formato de data americano
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
@@ -33,36 +38,33 @@ params:
   defaultTheme: auto
   ShowToc: true
   disableThemeToggle: false
+
   homeInfoParams:
-    Title: "Hello there, My name is Gustavo 👋"
-    Content: >
-      Sou um engenheiro de Cloud e DevOps com experiência em projetos multi-cloud, automação, infraestrutura como código (IaC) e segurança cibernética.  
-      Engenheiro de Cloud e DevOps. Aqui compartilho ideias, soluções e aprendizados.
+    Title: Hello there, My name is Gustavo 👋
+    Content: |
+      Sou um engenheiro de Cloud e DevOps com experiência em projetos multi-cloud, automação, infraestrutura como código (IaC) e segurança cibernética.   Engenheiro de Cloud e DevOps. Aqui compartilho ideias, soluções e aprendizados.
 
   assets:
-    favicon: "images/favicon.ico"
+    favicon: images/favicon.ico
+
+  analytics:
+    google:
+      SiteVerificationTag: G-Y08HKQ19T0
 
   socialIcons:
     - name: github
-      url: "https://github.com/gugafer"
+      url: https://github.com/gugafer
     - name: linkedin
-      url: "https://www.linkedin.com/in/gugafer/"
-
-
-  # comments: false  # Altere para true e configure abaixo se quiser usar Disqus
-  #   disqusShortname: "seudisqusshortname"  # Se usar Disqus, substitua aqui
+      url: https://www.linkedin.com/in/gugafer/
 
 menu:
   main:
     - name: Blog
       url: /posts/
       weight: 1
-    - name: Sobre
-      url: /sobre/
+    - name: About
+      url: /about/
       weight: 2
     - name: Tags
       url: /tags/
       weight: 3
-    # - name: Photography
-    #   url: /photography/
-    #   weight: 4
